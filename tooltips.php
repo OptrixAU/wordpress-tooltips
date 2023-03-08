@@ -131,7 +131,7 @@ function showTooltips($content)
 			$m_content = preg_replace('|\r\n|', '<br/>', $m_content);
 			if (!(empty($m_content)))
 			{
-				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
+				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id',`$m_content`); ";
 			}
 			$m_keyword_result .= '</script>';
 					}
@@ -179,7 +179,7 @@ function showTooltipsInTag($content)
 			$m_content = preg_replace('|\r\n|', '<br/>', $m_content);
 			if (!(empty($m_content)))
 			{
-				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id','$m_content'); ";
+				$m_keyword_result .= " toolTips('.classtoolTips$m_keyword_id',`$m_content`); ";
 			}
 			$m_keyword_result .= '</script>';
 					}
